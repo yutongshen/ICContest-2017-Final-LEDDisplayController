@@ -1,0 +1,104 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Wed Mar 21 00:39:11 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: dr/wd_addr_reg_0_
+              (rising edge-triggered flip-flop clocked by DCK)
+  Endpoint: ram1 (rising edge-triggered flip-flop clocked by DCK')
+  Path Group: DCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock DCK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  dr/wd_addr_reg_0_/CK (DFFRX1)            0.00       1.00 r
+  dr/wd_addr_reg_0_/Q (DFFRX1)             0.83       1.83 r
+  dr/addr[0] (DataReceiver)                0.00       1.83 r
+  ram1/AB[0] (sram_512x16)                 0.00       1.83 r
+  data arrival time                                   1.83
+
+  clock DCK' (rise edge)                 650.00     650.00
+  clock network delay (ideal)              1.00     651.00
+  clock uncertainty                       -0.10     650.90
+  ram1/CLKB (sram_512x16)                  0.00     650.90 r
+  library setup time                      -0.68     650.22
+  data required time                                650.22
+  -----------------------------------------------------------
+  data required time                                650.22
+  data arrival time                                  -1.83
+  -----------------------------------------------------------
+  slack (MET)                                       648.39
+
+
+  Startpoint: pc/out_buffer_reg_7__0_
+              (rising edge-triggered flip-flop clocked by GCK)
+  Endpoint: pc/OUT_reg_7_
+            (rising edge-triggered flip-flop clocked by GCK)
+  Path Group: GCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LEDDC              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock GCK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  pc/out_buffer_reg_7__0_/CK (DFFRX1)                     0.00       1.00 r
+  pc/out_buffer_reg_7__0_/Q (DFFRX1)                      0.57       1.57 f
+  pc/add_145_I8/A[0] (PWMConvert_DW01_inc_8)              0.00       1.57 f
+  pc/add_145_I8/U2/Y (BUFX4)                              0.18       1.75 f
+  pc/add_145_I8/U1_1_1/CO (ADDHX4)                        0.18       1.93 f
+  pc/add_145_I8/U15/Y (NAND2X6)                           0.09       2.02 r
+  pc/add_145_I8/U14/Y (CLKINVX8)                          0.07       2.09 f
+  pc/add_145_I8/U1_1_3/CO (ADDHX4)                        0.14       2.23 f
+  pc/add_145_I8/U1_1_4/CO (ADDHX2)                        0.21       2.44 f
+  pc/add_145_I8/U1_1_5/CO (ADDHX4)                        0.19       2.63 f
+  pc/add_145_I8/U8/Y (NAND2X6)                            0.09       2.72 r
+  pc/add_145_I8/U7/Y (INVX8)                              0.05       2.77 f
+  pc/add_145_I8/U1_1_7/CO (ADDHX4)                        0.16       2.93 f
+  pc/add_145_I8/U12/Y (NAND2X4)                           0.10       3.03 r
+  pc/add_145_I8/U11/Y (CLKINVX8)                          0.08       3.11 f
+  pc/add_145_I8/U1_1_9/CO (CMPR22X4)                      0.14       3.25 f
+  pc/add_145_I8/U1_1_10/CO (ADDHX1)                       0.23       3.48 f
+  pc/add_145_I8/U1_1_11/CO (ADDHX1)                       0.28       3.76 f
+  pc/add_145_I8/U1_1_12/CO (CMPR22X2)                     0.23       3.99 f
+  pc/add_145_I8/U1_1_13/CO (CMPR22X2)                     0.23       4.22 f
+  pc/add_145_I8/U3/Y (AND2X4)                             0.18       4.41 f
+  pc/add_145_I8/U1_1_15/CO (ADDHX4)                       0.15       4.55 f
+  pc/add_145_I8/U4/Y (XOR2X4)                             0.10       4.65 r
+  pc/add_145_I8/SUM[16] (PWMConvert_DW01_inc_8)           0.00       4.65 r
+  pc/U496/Y (NAND2BX1)                                    0.25       4.90 r
+  pc/OUT_reg_7_/D (DFFRX2)                                0.00       4.90 r
+  data arrival time                                                  4.90
+
+  clock GCK (rise edge)                                   4.20       4.20
+  clock network delay (ideal)                             1.00       5.20
+  clock uncertainty                                      -0.10       5.10
+  pc/OUT_reg_7_/CK (DFFRX2)                               0.00       5.10 r
+  library setup time                                     -0.20       4.90
+  data required time                                                 4.90
+  --------------------------------------------------------------------------
+  data required time                                                 4.90
+  data arrival time                                                 -4.90
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

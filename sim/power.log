@@ -1,0 +1,41 @@
+Warning: Main library 'gtech' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Fri Mar 16 13:56:39 2018
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+
+Operating Conditions: 
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 0.100000ff
+    Time Units = 1ns
+    Dynamic Power Units = 100nW    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+  Cell Internal Power  =   0.0000 nW    (0%)
+  Net Switching Power  =  27.1267 pW  (100%)
+                         ---------
+Total Dynamic Power    =  27.1267 pW  (100%)
+
+Cell Leakage Power     =   0.0000 
+
+1

@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : area
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Wed Mar 21 00:39:11 2018
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+    sram_512x16 (File: /home/yutongshen/IC_contest/ICContest105/src/sram_512x16/sram_512x16_slow_syn.db)
+
+Number of ports:               23
+Number of nets:               114
+Number of cells:               26
+Number of references:          14
+
+Combinational area:       17374.586354
+Noncombinational area:    175561.542675
+Net Interconnect area:    249527.966675
+
+Total cell area:          192936.129029
+Total area:               442464.095703
+1

@@ -1,0 +1,45 @@
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+ 
+****************************************
+Report : area
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Fri Mar 16 13:56:38 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gtech (File: /home/nfs_cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:               23
+Number of nets:              2379
+Number of cells:             1298
+Number of references:          18
+
+Combinational area:          0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: This design contains black box (unknown) components. (RPT-8)
+1

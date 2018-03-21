@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : qor
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Wed Mar 21 00:39:13 2018
+****************************************
+
+
+  Timing Path Group 'DCK'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.83
+  Critical Path Slack:         648.39
+  Critical Path Clk Period:   1300.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'GCK'
+  -----------------------------------
+  Levels of Logic:              21.00
+  Critical Path Length:          3.90
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         20
+  Hierarchical Port Count:        663
+  Leaf Cell Count:               1915
+  Buf/Inv Cell Count:             260
+  CT Buf/Inv Cell Count:            1
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    17374.586354
+  Noncombinational Area:
+                        175561.542675
+  Net Area:             249527.966675
+  -----------------------------------
+  Cell Area:            192936.129029
+  Design Area:          442464.095703
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2376
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ideal125
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.17
+  Logic Optimization:            0.11
+  Mapping Optimization:          2.11
+  -----------------------------------
+  Overall Compile Time:          5.29
+
+1

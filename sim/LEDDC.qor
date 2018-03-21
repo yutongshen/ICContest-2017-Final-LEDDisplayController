@@ -1,0 +1,75 @@
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : qor
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Fri Mar 16 13:56:39 2018
+****************************************
+
+
+  Timing Path Group 'DCK'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.00
+  Critical Path Slack:        1298.90
+  Critical Path Clk Period:   1300.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.10
+  Total Hold Violation:         -4.10
+  No. of Hold Violations:       41.00
+  -----------------------------------
+
+  Timing Path Group 'GCK'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.00
+  Critical Path Slack:           3.40
+  Critical Path Clk Period:      4.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.10
+  Total Hold Violation:       -108.80
+  No. of Hold Violations:     1088.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         72
+  Hierarchical Port Count:       2589
+  Leaf Cell Count:               2380
+  Buf/Inv Cell Count:             377
+  CT Buf/Inv Cell Count:            0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:        0.000000
+  Noncombinational Area:     0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:                 0.000000
+  Design Area:               0.000000
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3236
+  Nets With Violations:             1
+  -----------------------------------
+
+
+  Hostname: ideal125
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.00
+  Logic Optimization:            0.00
+  Mapping Optimization:          0.00
+  -----------------------------------
+  Overall Compile Time:          0.00
+
+1

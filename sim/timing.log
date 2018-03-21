@@ -1,0 +1,75 @@
+Warning: Design 'LEDDC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Fri Mar 16 13:56:38 2018
+****************************************
+
+Operating Conditions: 
+Wire Load Model Mode: top
+
+  Startpoint: DEN (input port clocked by DCK)
+  Endpoint: in_cs_reg_0_
+            (rising edge-triggered flip-flop clocked by DCK)
+  Path Group: DCK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock DCK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    1.00       2.00 r
+  DEN (in)                                                0.00       2.00 r
+  I_9/Z (GTECH_NOT)                                       0.00       2.00 f
+  C7334/Z (GTECH_AND2)                                    0.00       2.00 f
+  C7336/Z (GTECH_OR2)                                     0.00       2.00 f
+  C7337/Z (GTECH_OR2)                                     0.00       2.00 f
+  I_43/Z (GTECH_NOT)                                      0.00       2.00 r
+  in_cs_reg_0_/synch_enable (**SEQGEN**)                  0.00       2.00 r
+  data arrival time                                                  2.00
+
+  clock DCK (rise edge)                                1300.00    1300.00
+  clock network delay (ideal)                             1.00    1301.00
+  clock uncertainty                                      -0.10    1300.90
+  in_cs_reg_0_/clocked_on (**SEQGEN**)                    0.00    1300.90 r
+  library setup time                                      0.00    1300.90
+  data required time                                              1300.90
+  --------------------------------------------------------------------------
+  data required time                                              1300.90
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1298.90
+
+
+  Startpoint: OUT_reg_0_ (rising edge-triggered flip-flop clocked by GCK)
+  Endpoint: OUT[0] (output port clocked by GCK)
+  Path Group: GCK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GCK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  OUT_reg_0_/clocked_on (**SEQGEN**)       0.00       1.00 r
+  OUT_reg_0_/Q (**SEQGEN**)                0.00       1.00 r
+  OUT[0] (out)                             0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock GCK (rise edge)                    4.50       4.50
+  clock network delay (ideal)              1.00       5.50
+  clock uncertainty                       -0.10       5.40
+  output external delay                   -1.00       4.40
+  data required time                                  4.40
+  -----------------------------------------------------------
+  data required time                                  4.40
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         3.40
+
+
+1

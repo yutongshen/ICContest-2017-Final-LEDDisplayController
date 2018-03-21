@@ -1,0 +1,47 @@
+Loading db file '/home/yutongshen/IC_contest/ICContest105/src/sram_512x16/sram_512x16_slow_syn.db'
+Loading db file '/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LEDDC
+Version: D-2010.03-SP5
+Date   : Wed Mar 21 00:39:13 2018
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+    sram_512x16 (File: /home/yutongshen/IC_contest/ICContest105/src/sram_512x16/sram_512x16_slow_syn.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LEDDC                  tsmc13_wl10       slow
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   5.5641 mW   (92%)
+  Net Switching Power  = 512.0872 uW    (8%)
+                         ---------
+Total Dynamic Power    =   6.0762 mW  (100%)
+
+Cell Leakage Power     = 390.9307 uW
+
+1
